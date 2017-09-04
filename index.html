@@ -1,10 +1,13 @@
 <DOCTYPE!html>
 <html lang="en">
     <head>
+        
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="Vendors/CSS/normalize.css">
         <link rel="stylesheet" type="text/css" href="Vendors/CSS/grid.css">
         <link rel="stylesheet" type="text/css" href="Vendors/CSS/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="Resources/CSS/style.css">
+        <link rel="stylesheet" type="text/css" href="Resources/CSS/queries.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i" rel="stylesheet" type="text/css">
         <title>Omnifood</title>
     </head>
@@ -13,6 +16,7 @@
             <nav>
                 <div class="row" >
                     <img src="Resources/Images/logo-white.png" alt="Omnifood Logo" class="logo">
+                    <img src="Resources/Images/logo.png" alt="Omnifood Logo" class="logo-black">
                     <ul class="main-nav">
                         <li><a href="#">Food Delivery</a></li>
                         <li><a href="#">How It Works</a></li>
@@ -28,7 +32,7 @@
             </div>
         </header>
         
-        <section class="features">
+        <section class="features js--section-features">
             <div class="row">
                 <h2>Get food fast &mdash; not fast food.</h2>
                 <p class="long-copy">
@@ -48,12 +52,14 @@
                     <h3>Read in 20 minutes!</h3>
                     <p>you're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
                     </p>
-                </div><div class="col span-1-of-4 box">
+                </div>
+                <div class="col span-1-of-4 box">
                     <i class="ion-ios-nutrition-outline icon-big"></i>
                     <h3>100% organic</h3>
                     <p>All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
                     </p>
-                </div><div class="col span-1-of-4 box">
+                </div>
+                <div class="col span-1-of-4 box">
                     <i class="ion-ios-cart-outline icon-big"></i>
                     <h3>Order anything</h3>
                     <p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
@@ -73,15 +79,18 @@
                     <figure class="meal-photo">
                         <img src="Resources/Images/1.jpg" alt="Korean bibimbap with egg and vegetables">
                     </figure>
-                </li><li>
+                </li>
+                <li>
                     <figure class="meal-photo">
                         <img src="Resources/Images/2.jpg" alt="Simple italian pizza with cherry tomatoes">
                     </figure>
-                </li><li>
+                </li>
+                <li>
                     <figure class="meal-photo">
                         <img src="Resources/Images/3.jpg" alt="Chicken breast steak with vegetables">
                     </figure>
-                </li><li>
+                </li>
+                <li>
                     <figure class="meal-photo">
                         <img src="Resources/Images/4.jpg" alt="Autumn pumpkin soup">
                     </figure>
@@ -92,15 +101,18 @@
                     <figure class="meal-photo">
                         <img src="Resources/Images/5.jpg" alt="Paleo beef steak with vegetables">
                     </figure>
-                </li><li>
+                </li>
+                <li>
                     <figure class="meal-photo">
                         <img src="Resources/Images/6.jpg" alt="Healthy baguette with egg and vegetables">
                     </figure>
-                </li><li>
+                </li>
+                <li>
                     <figure class="meal-photo">
                         <img src="Resources/Images/7.jpg" alt="Burger with cheddar and bacon">
                     </figure>
-                </li><li>
+                </li>
+                <li>
                     <figure class="meal-photo">
                         <img src="Resources/Images/8.jpg" alt="Granola with cherries and strawberries">
                     </figure>
@@ -148,10 +160,12 @@
                     <div class="city-feature">
                         <i class="ion-ios-person icon-small"></i>
                         1600+ happy eaters
-                    </div><div class="city-feature">
+                    </div>
+                    <div class="city-feature">
                         <i class="ion-ios-star icon-small"></i>
                         60+ top chefs
-                    </div><div class="city-feature">
+                    </div>
+                    <div class="city-feature">
                         <i class="ion-social-twitter icon-small"></i>
                         <a href="#">@omnifood_lx</a>
                     </div>
@@ -163,10 +177,12 @@
                     <div class="city-feature">
                         <i class="ion-ios-person icon-small"></i>
                         3700+ happy eaters
-                    </div><div class="city-feature">
+                    </div>
+                    <div class="city-feature">
                         <i class="ion-ios-star icon-small"></i>
                         160+ top chefs
-                    </div><div class="city-feature">
+                    </div>
+                    <div class="city-feature">
                         <i class="ion-social-twitter icon-small"></i>
                         <a href="#">@omnifood_sf</a>
                     </div>
@@ -181,7 +197,8 @@
                     <div class="city-feature">
                         <i class="ion-ios-star icon-small"></i>
                         110+ top chefs
-                    </div><div class="city-feature">
+                    </div>
+                    <div class="city-feature">
                         <i class="ion-social-twitter icon-small"></i>
                         <a href="#">@omnifood_berlin</a>
                     </div>
@@ -192,10 +209,12 @@
                     <div class="city-feature">
                         <i class="ion-ios-person icon-small"></i>
                         1200+ happy eaters
-                    </div><div class="city-feature">
+                    </div>
+                    <div class="city-feature">
                         <i class="ion-ios-star icon-small"></i>
                         50+ top chefs
-                    </div><div class="city-feature">
+                    </div>
+                    <div class="city-feature">
                         <i class="ion-social-twitter icon-small"></i>
                         <a href="#">@omnifood_london</a>
                     </div>
@@ -387,9 +406,16 @@
         </footer>
     
     
-    
-    </body>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+            <script src="Vendors/jquery.waypoints.min.js"></script>
+            <script src="Resources/Javascript/script.js"></script>
 
+    </body>
+    
+    
     
 </html>
     
