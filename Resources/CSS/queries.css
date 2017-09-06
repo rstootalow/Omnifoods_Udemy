@@ -15,7 +15,7 @@
 
 
 
-/* all styles that go in this block, are applied when the screen sixe is less than or equal to 1023px.IPAD IN LANDSCAPE VIEW IS 1024px  768-1023px*/
+/* all styles that go in this block, are applied when the screen size is less than or equal to 1023px.IPAD IN LANDSCAPE VIEW IS 1024px  768-1023px*/
 
 
 @media only screen and (max-width: 1023px) {

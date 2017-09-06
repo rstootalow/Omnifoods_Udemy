@@ -674,3 +674,30 @@ footer p {
     text-align: center;
     margin-top: 15px;
 }
+
+/*---------------------------------*/
+/*----------ANIMATIONS----------*/
+/*---------------------------------*/
+
+/* set this element to invisible, so the fade in animation will work.*/
+.js--wp-1, 
+.js--wp-2,  
+.js--wp-3
+{  
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
