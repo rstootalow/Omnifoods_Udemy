@@ -61,7 +61,8 @@
     body {font-size: 16px;}
     section {padding: 30px 0;}
     
-    .row, .hero-text-box {padding: 0 4%; }
+    .row,
+    .hero-text-box {padding: 0 4%; }
     
     .col {
         width: 100%;
@@ -69,6 +70,43 @@
     }  
     
     .main-nav {display: none;}
+    
+    .mobile-nav-icon {display: inline-block;}
+    
+    .mobile-nav-icon:hover {border-bottom: none;}
+    
+    .main-nav {float: left;}/* moves main nav to the left side of window so the nav icon can  */
+    
+    .main-nav li {
+        display: block;
+        
+    } /* we styled it as inline-block in style.css. Block display here will make sure the li elements stack on top of each other which is the style we desire.*/
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block; /* this styling gives proper spacing to the links associated with the li */
+        border: none;
+        padding: 10px 0;
+        font-size: 100%;
+        /* Since this is styled for mobile devices, no need for borders when hovering since that is not possible on mobil device. */
+    }
+    
+    .main-nav {
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+    
+    .sticky .main-nav {margin-top: 10px;}
+
+    .sticky .main-nav li a:link, 
+    .sticky .main-nav li a:visited {padding: 10px 0;}
+
+
+    .sticky .logo {display: none;}
+    .sticky .logo-black {display: block;}
+    .sticky .mobile-nav-icon i {color: #555;}
+    .sticky .mobile-nav-icon {margin-top: 10px;}
+
     
     .section-testimonials {
         width: 100%;
